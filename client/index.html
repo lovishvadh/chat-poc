@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+
+    <!-- Loads socket.io client from CDN -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.4.0/socket.io.slim.js"
+    ></script>
+
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>SkyLab Chat APP POC</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="center">Chat APP POC</h1>
+
+      <div id="chat-container"></div>
+
+      <div class="center">
+        <form id="messageForm">
+          <input class="input" type="text" id="messageInput" /><button
+            class="btn"
+            type="submit"
+            id="sendBtn"
+          >
+            Send!
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
